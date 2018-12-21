@@ -1,0 +1,69 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>TypeError</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 3.6.5: D:\environment\python\anaconda352\python.exe<br>Fri Dec 14 16:34:47 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file://E:\my_proj\ms10\test\test1.py">E:\my_proj\ms10\test\test1.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;24</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;25</small>&nbsp;if&nbsp;__name__=="__main__":<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;26</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f("A",3.4))<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;27</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f2("A",3.4))<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;28</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(sum(12,'a'))<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>builtin</em> <strong>print</strong>&nbsp;= &lt;built-in function print&gt;, <strong>f2</strong>&nbsp;= &lt;function f2&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file://E:\my_proj\ms10\test\test1.py">E:\my_proj\ms10\test\test1.py</a> in <strong>f2</strong>(a='A', b=3.4)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;21</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;22</small>&nbsp;def&nbsp;f2(a,&nbsp;b):<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;23</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add2(a,b)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;24</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;25</small>&nbsp;if&nbsp;__name__=="__main__":<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>global</em> <strong>add2</strong>&nbsp;= &lt;function add2&gt;, <strong>a</strong>&nbsp;= 'A', <strong>b</strong>&nbsp;= 3.4</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file://E:\my_proj\ms10\test\test1.py">E:\my_proj\ms10\test\test1.py</a> in <strong>add2</strong>(a='A', b=3.4)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;&nbsp;6</small>&nbsp;def&nbsp;add2(a,&nbsp;b):<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;&nbsp;7</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;not&nbsp;isinstance(a,&nbsp;float):<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;&nbsp;8</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;TypeError('类型错误')<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;&nbsp;9</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;a&nbsp;+&nbsp;b<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;10</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><em>builtin</em> <strong>TypeError</strong>&nbsp;= &lt;class 'TypeError'&gt;</font></small></td></tr></table><p><strong>TypeError</strong>: 类型错误
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('类型错误',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>with_traceback&nbsp;=
+&lt;built-in method with_traceback of TypeError object&gt;
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "E:/my_proj/ms10/test/test1.py", line 27, in &lt;module&gt;
+    print(f2("A",3.4))
+  File "E:/my_proj/ms10/test/test1.py", line 23, in f2
+    add2(a,b)
+  File "E:/my_proj/ms10/test/test1.py", line 8, in add2
+    raise TypeError('类型错误')
+TypeError: 类型错误
+
+-->

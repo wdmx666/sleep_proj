@@ -1,0 +1,78 @@
+TypeError
+Python 3.6.5: D:\environment\python\anaconda352\python.exe
+Fri Dec 14 16:35:28 2018
+
+A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.
+
+ E:\my_proj\ms10\test\test1.py in <module>()
+   24 
+   25 if __name__=="__main__":
+   26     print(f("A",3.4))
+   27     print(f2("A",3.4))
+   28     print(sum(12,'a'))
+builtinprint = <built-in function print>
+f2 = <function f2>
+
+ E:\my_proj\ms10\test\test1.py in f2(a='A', b=3.4)
+   21 
+   22 def f2(a, b):
+   23     add2(a,b)
+   24 
+   25 if __name__=="__main__":
+global add2 = <function add2>
+a = 'A'
+b = 3.4
+
+ E:\my_proj\ms10\test\test1.py in add2(a='A', b=3.4)
+    6 def add2(a, b):
+    7     if not isinstance(a, float):
+    8         raise TypeError('类型错误')
+    9     return a + b
+   10 
+builtinTypeError = <class 'TypeError'>
+TypeError: 类型错误
+    __cause__ = None
+    __class__ = <class 'TypeError'>
+    __context__ = None
+    __delattr__ = <method-wrapper '__delattr__' of TypeError object>
+    __dict__ = {}
+    __dir__ = <built-in method __dir__ of TypeError object>
+    __doc__ = 'Inappropriate argument type.'
+    __eq__ = <method-wrapper '__eq__' of TypeError object>
+    __format__ = <built-in method __format__ of TypeError object>
+    __ge__ = <method-wrapper '__ge__' of TypeError object>
+    __getattribute__ = <method-wrapper '__getattribute__' of TypeError object>
+    __gt__ = <method-wrapper '__gt__' of TypeError object>
+    __hash__ = <method-wrapper '__hash__' of TypeError object>
+    __init__ = <method-wrapper '__init__' of TypeError object>
+    __init_subclass__ = <built-in method __init_subclass__ of type object>
+    __le__ = <method-wrapper '__le__' of TypeError object>
+    __lt__ = <method-wrapper '__lt__' of TypeError object>
+    __ne__ = <method-wrapper '__ne__' of TypeError object>
+    __new__ = <built-in method __new__ of type object>
+    __reduce__ = <built-in method __reduce__ of TypeError object>
+    __reduce_ex__ = <built-in method __reduce_ex__ of TypeError object>
+    __repr__ = <method-wrapper '__repr__' of TypeError object>
+    __setattr__ = <method-wrapper '__setattr__' of TypeError object>
+    __setstate__ = <built-in method __setstate__ of TypeError object>
+    __sizeof__ = <built-in method __sizeof__ of TypeError object>
+    __str__ = <method-wrapper '__str__' of TypeError object>
+    __subclasshook__ = <built-in method __subclasshook__ of type object>
+    __suppress_context__ = False
+    __traceback__ = <traceback object>
+    args = ('类型错误',)
+    with_traceback = <built-in method with_traceback of TypeError object>
+
+The above is a description of an error in a Python program.  Here is
+the original traceback:
+
+Traceback (most recent call last):
+  File "E:/my_proj/ms10/test/test1.py", line 27, in <module>
+    print(f2("A",3.4))
+  File "E:/my_proj/ms10/test/test1.py", line 23, in f2
+    add2(a,b)
+  File "E:/my_proj/ms10/test/test1.py", line 8, in add2
+    raise TypeError('类型错误')
+TypeError: 类型错误
+
